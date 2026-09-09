@@ -1,0 +1,670 @@
+/* =========================
+   GLOBAL
+========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: #000;
+    color: #fff;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    line-height: 1.6;
+}
+
+
+img {
+    width: 100%;
+    display: block;
+}
+
+
+a {
+    color: #B97991;
+    text-decoration: none;
+}
+
+
+section {
+    padding: 55px 6%;
+}
+material-icons {
+    font-size: 2px;
+}
+
+
+/* =========================
+   NAVIGATION
+========================== */
+
+.navbar {
+    width: 100%;
+
+    background-color: #000;
+
+    border-bottom: 1px solid #333;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+}
+
+
+.nav-container {
+    max-width: 1400px;
+
+    margin: auto;
+
+    min-height: 75px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 25px;
+}
+
+
+.nav-links {
+    list-style: none;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 28px;
+}
+
+
+.nav-links a {
+    color: #fff;
+
+    font-size: 14px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.5px;
+
+    transition: opacity 0.3s ease;
+}
+
+
+.nav-links a:hover {
+    opacity: 0.6;
+}
+
+
+
+/* =========================
+   HEADER / HERO
+========================== */
+
+/* =========================
+   HEADER / HERO
+========================== */
+
+.hero {
+    min-height: 45vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    /* Less padding */
+    padding: 40px 20px;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.65)
+        ),
+        url("images/hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+.hero-content {
+    max-width: 1000px;
+    width: 100%;
+}
+
+
+.hero h1 {
+    /* Smaller so Destiny + Sele stays on one line */
+    font-size: clamp(2.2rem, 6vw, 5rem);
+
+    font-weight: 300;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 8px;
+
+    /* Prevent names from wrapping */
+    white-space: nowrap;
+}
+
+
+.hero p {
+    font-size: clamp(0.85rem, 1.5vw, 1.2rem);
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+.qr {
+    display: block;
+    margin: 0 auto;
+    width: 65%;
+    padding-top: 20px;
+}
+
+
+/* =========================
+   CAROUSEL
+========================== */
+
+.carousel-section {
+    /* Much less space above carousel */
+    padding: 35px 0 50px;
+}
+
+
+.carousel-section .section-title {
+    margin-bottom: 25px;
+}
+
+/* =========================
+   SECTION TITLES
+========================== */
+
+.section-title {
+    text-align: center;
+
+    font-size: clamp(2rem, 4vw, 3.5rem);
+
+    font-weight: 300;
+
+    margin-bottom: 45px;
+}
+
+
+
+/* =========================
+   CAROUSEL
+========================== */
+
+.carousel-section {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+.carousel {
+    max-width: 1200px;
+
+    margin: auto;
+
+    position: relative;
+
+    overflow: hidden;
+
+    aspect-ratio: 16 / 8;
+}
+
+
+.carousel-slide {
+    display: none;
+
+    width: 100%;
+    height: 100%;
+}
+
+
+.carousel-slide.active {
+    display: block;
+}
+
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+
+/* CAROUSEL BUTTONS */
+
+.carousel-btn {
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 50px;
+    height: 50px;
+
+    border: 1px solid rgba(255, 255, 255, 0.7);
+
+    border-radius: 50%;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    color: #fff;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.carousel-btn:hover {
+    background-color: #fff;
+
+    color: #000;
+}
+
+
+.carousel-btn.prev {
+    left: 20px;
+}
+
+
+.carousel-btn.next {
+    right: 20px;
+}
+
+
+
+/* =========================
+   GRID #1
+   CONTENT CARDS
+========================== */
+
+.content-grid {
+    max-width: 1300px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+
+.grid-card {
+    background-color: #0d0d0d;
+
+    border: 1px solid #272727;
+
+    overflow: hidden;
+}
+
+
+.grid-card-image {
+    aspect-ratio: 4 / 3;
+
+    overflow: hidden;
+}
+
+
+.grid-card-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+
+.grid-card:hover img {
+    transform: scale(1.05);
+}
+
+
+.grid-card-content {
+    padding: 30px;
+}
+
+
+.grid-card h3 {
+    font-size: 1.7rem;
+
+    font-weight: 400;
+
+    margin-bottom: 12px;
+}
+
+
+.grid-card p {
+    color: #ccc;
+
+    font-size: 1rem;
+}
+
+
+
+/* =========================
+   GRID #2
+   PHOTO GALLERY
+========================== */
+
+.photo-grid {
+    max-width: 1300px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+
+.photo-grid-item {
+    aspect-ratio: 1 / 1;
+
+    overflow: hidden;
+}
+
+
+.photo-grid-item img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+
+.photo-grid-item:hover img {
+    transform: scale(1.06);
+}
+
+
+
+/* =========================
+   GRID #3
+   WEDDING DETAILS
+========================== */
+
+.details-grid {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.detail-box {
+    border: 1px solid #333;
+
+    padding: 45px 30px;
+
+    text-align: center;
+}
+
+
+.detail-box h3 {
+    font-size: 1.6rem;
+
+    margin-bottom: 15px;
+}
+
+
+.detail-box p {
+    color: #bbb;
+}
+
+
+.detail-box a {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    border-bottom: 1px solid #fff;
+
+    padding-bottom: 3px;
+
+    transition: opacity 0.3s ease;
+}
+
+
+.detail-box a:hover {
+    opacity: 0.6;
+}
+
+
+/* =========================
+   STORY PAGE
+   Q&A
+========================== */
+
+.couple-qa {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(30px, 6vw, 80px);
+
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.qa-column {
+    min-width: 0;
+}
+
+.qa-column h3 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.qa-item {
+    margin-bottom: 28px;
+}
+
+.qa-item h4 {
+    margin: 0 0 8px;
+    line-height: 1.4;
+}
+
+.qa-item p {
+    margin: 0;
+    line-height: 1.7;
+    overflow-wrap: break-word;
+}
+
+/* Tablet + Phone */
+@media (max-width: 768px) {
+    .couple-qa {
+        grid-template-columns: 1fr;
+        gap: 45px;
+        padding: 15px;
+    }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+    .couple-qa {
+        padding: 10px;
+    }
+
+    .qa-column h3 {
+        margin-bottom: 22px;
+    }
+
+    .qa-item {
+        margin-bottom: 22px;
+    }
+}
+/* =========================
+   FOOTER
+========================== */
+
+footer {
+    text-align: center;
+
+    padding: 50px 20px;
+
+    border-top: 1px solid #222;
+
+    color: #888;
+
+    font-size: 0.9rem;
+}
+
+
+
+/* =========================
+   TABLET
+   900px AND SMALLER
+========================== */
+
+@media (max-width: 900px) {
+
+    section {
+        padding: 60px 5%;
+    }
+
+
+    .content-grid,
+    .details-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .photo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .nav-links {
+        gap: 15px;
+    }
+
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+
+    .carousel {
+        aspect-ratio: 4 / 3;
+    }
+
+}
+
+
+
+/* =========================
+   MOBILE
+   600px AND SMALLER
+========================== */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        position: relative;
+    }
+
+
+    .nav-container {
+        padding: 20px;
+    }
+
+
+    .nav-links {
+        gap: 12px 18px;
+    }
+
+
+    .nav-links a {
+        font-size: 11px;
+    }
+
+.hero {
+    min-height: 35vh;
+    padding: 30px 15px;
+}
+
+
+.hero h1 {
+    font-size: clamp(1.7rem, 9vw, 3rem);
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+
+.hero p {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+}
+
+
+    .content-grid,
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .photo-grid {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 8px;
+    }
+
+
+    .carousel {
+        aspect-ratio: 1 / 1;
+    }
+
+.carousel-section {
+    padding-top: 25px;
+}
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .grid-card-content {
+        padding: 22px;
+    }
+
+}
