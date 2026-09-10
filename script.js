@@ -77,7 +77,7 @@ function openProposalVideo() {
     const video = document.getElementById("proposalVideo");
 
     video.src =
-        "https://www.youtube.com/embed/YOUR_VIDEO_ID?autoplay=1";
+        "https://www.youtube.com/embed/d80FEDz3lf4?autoplay=1";
 
     modal.classList.add("active");
 
