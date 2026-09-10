@@ -71,29 +71,23 @@ function showSlide(index) {
    ========================== */
 
 function openProposalVideo() {
-
     const modal = document.getElementById("proposalModal");
-
     const video = document.getElementById("proposalVideo");
 
     video.src =
-        "https://www.youtube.com/embed/d80FEDz3lf4?autoplay=1";
+        "https://www.youtube.com/embed/d80FEDz3lf4?autoplay=1&playsinline=1";
 
     modal.classList.add("active");
-
 }
 
-
 function closeProposalVideo() {
-
     const modal = document.getElementById("proposalModal");
-
     const video = document.getElementById("proposalVideo");
 
     modal.classList.remove("active");
 
+    // Stops the video when the popup closes
     video.src = "";
-
 }
 
 /* =========================
