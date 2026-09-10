@@ -66,7 +66,35 @@ function showSlide(index) {
 
 }
 
+/* =========================
+         PROPOSAL VIDEO
+   ========================== */
 
+function openProposalVideo() {
+
+    const modal = document.getElementById("proposalModal");
+
+    const video = document.getElementById("proposalVideo");
+
+    video.src =
+        "https://www.youtube.com/embed/YOUR_VIDEO_ID?autoplay=1";
+
+    modal.classList.add("active");
+
+}
+
+
+function closeProposalVideo() {
+
+    const modal = document.getElementById("proposalModal");
+
+    const video = document.getElementById("proposalVideo");
+
+    modal.classList.remove("active");
+
+    video.src = "";
+
+}
 
 /* =========================
    NEXT / PREVIOUS BUTTON
