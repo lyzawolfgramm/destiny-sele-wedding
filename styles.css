@@ -470,6 +470,149 @@ material-icons {
 
 
 /* =========================
+   PHOTO ALBUMS
+========================= */
+
+.photo-albums {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 30px;
+}
+
+.album-heading {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.album-heading h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.album-heading p {
+    opacity: 0.75;
+}
+
+
+/* ALBUM GRID */
+
+.album-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+
+/* ALBUM CARD */
+
+.album-card {
+    background: #111;
+    text-align: center;
+    overflow: hidden;
+    border: 1px solid #292929;
+}
+
+.album-image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.album-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.album-card:hover .album-image img {
+    transform: scale(1.04);
+}
+
+
+/* CARD CONTENT */
+
+.album-content {
+    padding: 30px 20px 35px;
+}
+
+.album-content h2 {
+    margin: 0 0 8px;
+    font-size: 1.5rem;
+}
+
+.album-content p {
+    margin: 0 0 25px;
+    opacity: 0.7;
+}
+
+
+/* VIEW ALBUM BUTTON */
+
+.album-button {
+    display: inline-block;
+    padding: 11px 24px;
+    border: 1px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 0.75rem;
+    transition: 0.3s ease;
+}
+
+.album-button:hover {
+    background: #fff;
+    color: #000;
+}
+
+
+/* COMING SOON */
+
+.album-coming {
+    display: inline-block;
+    padding: 11px 24px;
+    border: 1px solid #555;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 0.75rem;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 850px) {
+
+    .album-grid {
+        grid-template-columns: 1fr;
+        max-width: 550px;
+        margin: 0 auto;
+    }
+
+    .album-image {
+        height: 400px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .photo-albums {
+        padding: 55px 20px;
+    }
+
+    .album-heading h1 {
+        font-size: 2.3rem;
+    }
+
+    .album-image {
+        height: 300px;
+    }
+
+}
+
+/* =========================
    STORY PAGE
    Q&A
 ========================== */
