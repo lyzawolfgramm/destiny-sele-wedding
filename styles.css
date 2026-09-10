@@ -1033,6 +1033,13 @@ material-icons {
     border: 0;
 }
 
+.proposal-video-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+}
 
 /* MOBILE */
 
