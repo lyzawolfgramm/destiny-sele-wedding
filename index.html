@@ -69,6 +69,45 @@
     </header>
 
 
+  <!-- =========================
+         PROPOSAL VIDEO
+    ========================== -->
+    
+<button class="proposal-video-btn" onclick="openProposalVideo()">
+    <span class="youtube-icon">▶</span>
+
+    <span class="proposal-text">
+        <small>WATCH OUR</small>
+        <strong>PROPOSAL VIDEO</strong>
+    </span>
+
+    <span class="proposal-arrow">›</span>
+</button>
+
+
+<!-- Video Modal -->
+<div class="video-modal" id="proposalModal">
+
+    <div class="video-modal-content">
+
+        <button class="video-close" onclick="closeProposalVideo()">
+            &times;
+        </button>
+
+        <div class="video-wrapper">
+            <iframe
+                id="proposalVideo"
+                src=""
+                title="Destiny and Tasele Proposal Video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+    </div>
+
+</div>
+
 
     <!-- =========================
          CAROUSEL
