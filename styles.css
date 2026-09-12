@@ -119,7 +119,7 @@ material-icons {
 ========================== */
 
 .hero {
-    min-height: 45vh;
+    /*min-height: 45vh;*/
 
     display: flex;
     justify-content: center;
