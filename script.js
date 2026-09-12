@@ -62,7 +62,9 @@ function showSlide(index) {
 
     // Show the current slide
 
-    slides[currentSlide].classList.add("active");
+    if (slides.length > 0) {
+        slides[currentSlide].classList.add("active");
+    }
 
 }
 
@@ -74,6 +76,8 @@ function openProposalVideo() {
     const modal = document.getElementById("proposalModal");
     const video = document.getElementById("proposalVideo");
 
+    if (!modal || !video) return;
+
     video.src =
         "https://www.youtube.com/embed/d80FEDz3lf4?autoplay=1&playsinline=1";
 
@@ -83,6 +87,8 @@ function openProposalVideo() {
 function closeProposalVideo() {
     const modal = document.getElementById("proposalModal");
     const video = document.getElementById("proposalVideo");
+
+    if (!modal || !video) return;
 
     modal.classList.remove("active");
 
@@ -109,8 +115,8 @@ function changeSlide(direction) {
    5 seconds
 ========================== */
 
-setInterval(function() {
-
-    changeSlide(1);
-
-}, 5000);
+if (slides.length > 0) {
+    setInterval(function() {
+        changeSlide(1);
+    }, 5000);
+}
