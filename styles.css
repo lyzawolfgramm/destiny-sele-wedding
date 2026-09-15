@@ -134,6 +134,7 @@ material-icons {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 30px;
     max-width: 900px;
 }
 #wedding > .hero-content p,
