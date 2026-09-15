@@ -37,7 +37,7 @@ a {
 
 
 section {
-    padding: 55px 6%;
+    padding: 25px 6%;
 }
 material-icons {
     font-size: 2px;
@@ -128,7 +128,7 @@ material-icons {
     text-align: center;
 
     /* Less padding */
-    padding: 40px 20px;
+    padding: 0px 20px 40px 20px;
 
     background:
         linear-gradient(
@@ -185,7 +185,7 @@ material-icons {
 
 .carousel-section {
     /* Much less space above carousel */
-    padding: 35px 0 50px;
+    padding: 35px 0 25px;
 }
 
 
@@ -1163,7 +1163,7 @@ footer {
 
 .hero {
     min-height: 35vh;
-    padding: 30px 15px;
+    padding: 0px 15px 20px 15px;
 }
 
 
