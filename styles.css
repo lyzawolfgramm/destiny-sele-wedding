@@ -1058,4 +1058,24 @@ footer {
         margin-bottom: 22px;
     }
 }
+
+/* MOBILE CAROUSEL SPACING FIX */
+@media (max-width: 600px) {
+
+    .carousel-section {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .carousel-section .section-title {
+        margin-top: 0 !important;
+        margin-bottom: 5px !important;
+    }
+
+    .carousel {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+}
 ```
