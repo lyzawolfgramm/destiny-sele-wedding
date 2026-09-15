@@ -990,7 +990,7 @@ footer {
     }
 
     .carousel-section {
-    padding: 10px 0 0;
+    padding: 25px 0 0;
     margin: 0;
     }
 
@@ -1025,12 +1025,12 @@ footer {
         height: 40px;
     }
     #wedding > .hero-content p,
-    #registry > .hero-content p {
-        font-size: 0.75rem;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        text-align: center;
-    }
+#registry > .hero-content p {
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+}
 
     .grid-card-content {
         padding: 22px;
