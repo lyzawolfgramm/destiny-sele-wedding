@@ -958,29 +958,28 @@ footer {
 
     .carousel {
     width: 100%;
-    height: 70vh;
-    max-height: 650px;
+    height: auto;
+    max-height: none;
     aspect-ratio: auto;
     background: #000;
     overflow: hidden;
     }
 
     .carousel-slide {
-        width: 100%;
-        height: 100%;
+    width: 100%;
+    height: auto;
     }
 
     .carousel-slide.active {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        display: block;
     }
 
     .carousel-slide img {
         width: 100%;
-        height: 100%;
+        height: auto;
         object-fit: contain;
         object-position: center;
+        display: block;
     }
 
     .carousel-section {
