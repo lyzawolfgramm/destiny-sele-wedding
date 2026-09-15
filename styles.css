@@ -1,3 +1,4 @@
+```css
 /* =========================
    GLOBAL
 ========================== */
@@ -8,37 +9,31 @@
     box-sizing: border-box;
 }
 
-
 html {
     scroll-behavior: smooth;
 }
 
-
 body {
     background-color: #000;
     color: #fff;
-
     font-family: Arial, Helvetica, sans-serif;
-
     line-height: 1.6;
 }
-
 
 img {
     width: 100%;
     display: block;
 }
 
-
 a {
     color: #B97991;
     text-decoration: none;
 }
 
-
 section {
     padding: 25px 6%;
 }
+
 material-icons {
     font-size: 2px;
 }
@@ -50,85 +45,54 @@ material-icons {
 
 .navbar {
     width: 100%;
-
     background-color: #000;
-
     border-bottom: 1px solid #333;
-
     position: sticky;
     top: 0;
-
     z-index: 1000;
 }
 
-
 .nav-container {
     max-width: 1400px;
-
     margin: auto;
-
     min-height: 75px;
-
     display: flex;
-
     justify-content: center;
     align-items: center;
-
     padding: 0 25px;
 }
 
-
 .nav-links {
     list-style: none;
-
     display: flex;
-
     flex-wrap: wrap;
-
     justify-content: center;
-
     gap: 28px;
 }
 
-
 .nav-links a {
     color: #fff;
-
     font-size: 14px;
-
     text-transform: uppercase;
-
     letter-spacing: 1.5px;
-
     transition: opacity 0.3s ease;
 }
-
 
 .nav-links a:hover {
     opacity: 0.6;
 }
 
 
-
-/* =========================
-   HEADER / HERO
-========================== */
-
 /* =========================
    HEADER / HERO
 ========================== */
 
 .hero {
-    /*min-height: 45vh;*/
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     text-align: center;
-
-    /* Less padding */
-    padding: 0px 20px 40px 20px;
+    padding: 0 20px 40px 20px;
 
     background:
         linear-gradient(
@@ -141,33 +105,22 @@ material-icons {
     background-position: center;
 }
 
-
 .hero-content {
     max-width: 1000px;
     width: 100%;
 }
 
-
 .hero h1 {
-    /* Smaller so Destiny + Sele stays on one line */
     font-size: clamp(2.2rem, 6vw, 5rem);
-
     font-weight: 300;
-
     letter-spacing: 3px;
-
     margin-bottom: 8px;
-
-    /* Prevent names from wrapping */
     white-space: nowrap;
 }
 
-
 .hero p {
     font-size: clamp(0.85rem, 1.5vw, 1.2rem);
-
     letter-spacing: 2px;
-
     text-transform: uppercase;
 }
 
@@ -180,33 +133,15 @@ material-icons {
 
 
 /* =========================
-   CAROUSEL
-========================== */
-
-.carousel-section {
-    /* Much less space above carousel */
-    padding: 35px 0 25px;
-}
-
-
-.carousel-section .section-title {
-    margin-bottom: 25px;
-}
-
-/* =========================
    SECTION TITLES
 ========================== */
 
 .section-title {
     text-align: center;
-
     font-size: clamp(2rem, 4vw, 3.5rem);
-
     font-weight: 300;
-
     margin-bottom: 45px;
 }
-
 
 
 /* =========================
@@ -214,90 +149,69 @@ material-icons {
 ========================== */
 
 .carousel-section {
+    padding: 35px 0 25px;
     padding-left: 0;
     padding-right: 0;
 }
 
+.carousel-section .section-title {
+    margin-bottom: 25px;
+}
 
 .carousel {
     max-width: 1200px;
-
     margin: auto;
-
     position: relative;
-
     overflow: hidden;
-
     aspect-ratio: 16 / 8;
 }
 
-
 .carousel-slide {
     display: none;
-
     width: 100%;
     height: 100%;
 }
-
 
 .carousel-slide.active {
     display: block;
 }
 
-
 .carousel-slide img {
     width: 100%;
     height: 100%;
-
     object-fit: cover;
 }
-
 
 
 /* CAROUSEL BUTTONS */
 
 .carousel-btn {
     position: absolute;
-
     top: 50%;
-
     transform: translateY(-50%);
-
     width: 50px;
     height: 50px;
-
     border: 1px solid rgba(255, 255, 255, 0.7);
-
     border-radius: 50%;
-
     background-color: rgba(0, 0, 0, 0.5);
-
     color: #fff;
-
     font-size: 25px;
-
     cursor: pointer;
-
     transition: 0.3s;
 }
 
-
 .carousel-btn:hover {
     background-color: #fff;
-
     color: #000;
 }
-
 
 .carousel-btn.prev {
     left: 20px;
 }
 
-
 .carousel-btn.next {
     right: 20px;
 }
-
 
 
 /* =========================
@@ -307,68 +221,48 @@ material-icons {
 
 .content-grid {
     max-width: 1300px;
-
     margin: auto;
-
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
-
     gap: 30px;
 }
 
-
 .grid-card {
     background-color: #0d0d0d;
-
     border: 1px solid #272727;
-
     overflow: hidden;
 }
-
 
 .grid-card-image {
     aspect-ratio: 4 / 3;
-
     overflow: hidden;
 }
-
 
 .grid-card-image img {
     width: 100%;
     height: 100%;
-
     object-fit: cover;
-
     transition: transform 0.5s ease;
 }
-
 
 .grid-card:hover img {
     transform: scale(1.05);
 }
 
-
 .grid-card-content {
     padding: 30px;
 }
 
-
 .grid-card h3 {
     font-size: 1.7rem;
-
     font-weight: 400;
-
     margin-bottom: 12px;
 }
 
-
 .grid-card p {
     color: #ccc;
-
     font-size: 1rem;
 }
-
 
 
 /* =========================
@@ -378,38 +272,27 @@ material-icons {
 
 .photo-grid {
     max-width: 1300px;
-
     margin: auto;
-
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
-
     gap: 15px;
 }
 
-
 .photo-grid-item {
     aspect-ratio: 1 / 1;
-
     overflow: hidden;
 }
-
 
 .photo-grid-item img {
     width: 100%;
     height: 100%;
-
     object-fit: cover;
-
     transition: transform 0.5s ease;
 }
-
 
 .photo-grid-item:hover img {
     transform: scale(1.06);
 }
-
 
 
 /* =========================
@@ -419,50 +302,34 @@ material-icons {
 
 .details-grid {
     max-width: 1200px;
-
     margin: auto;
-
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
-
     gap: 25px;
 }
 
-
 .detail-box {
     border: 1px solid #333;
-
     padding: 45px 30px;
-
     text-align: center;
 }
 
-
 .detail-box h3 {
     font-size: 1.6rem;
-
     margin-bottom: 15px;
 }
-
 
 .detail-box p {
     color: #bbb;
 }
 
-
 .detail-box a {
     display: inline-block;
-
     margin-top: 20px;
-
     border-bottom: 1px solid #fff;
-
     padding-bottom: 3px;
-
     transition: opacity 0.3s ease;
 }
-
 
 .detail-box a:hover {
     opacity: 0.6;
@@ -471,7 +338,7 @@ material-icons {
 
 /* =========================
    PHOTO ALBUMS
-========================= */
+========================== */
 
 .photo-albums {
     max-width: 1200px;
@@ -579,9 +446,10 @@ material-icons {
     font-size: 0.75rem;
 }
 
+
 /* =========================
    OUR STORY
-========================= */
+========================== */
 
 .story-page {
     max-width: 1200px;
@@ -617,7 +485,7 @@ material-icons {
 
 /* =========================
    PROFILE CARDS
-========================= */
+========================== */
 
 .profile-grid {
     display: grid;
@@ -669,7 +537,7 @@ material-icons {
 
 /* =========================
    Q&A
-========================= */
+========================== */
 
 .couple-qa {
     max-width: 1000px;
@@ -734,8 +602,237 @@ material-icons {
 
 
 /* =========================
-   MOBILE
-========================= */
+   STORY PAGE Q&A
+========================== */
+
+.couple-qa {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(30px, 6vw, 80px);
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.qa-column {
+    min-width: 0;
+}
+
+.qa-column h3 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.qa-item {
+    margin-bottom: 28px;
+}
+
+.qa-item h4 {
+    margin: 0 0 8px;
+    line-height: 1.4;
+}
+
+.qa-item p {
+    margin: 0;
+    line-height: 1.7;
+    overflow-wrap: break-word;
+}
+
+
+/* =========================
+   PROPOSAL VIDEO BUTTON
+========================== */
+
+.proposal-video-btn {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    background: #000;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    padding: 14px 24px;
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+.proposal-video-btn:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 8px 25px rgba(255,255,255,0.15);
+    background: #111;
+}
+
+.youtube-icon {
+    width: 45px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ff0000;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.proposal-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.proposal-text small {
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+
+.proposal-text strong {
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+.proposal-arrow {
+    font-size: 32px;
+    transition: transform 0.3s ease;
+}
+
+.proposal-video-btn:hover .proposal-arrow {
+    transform: translateX(5px);
+}
+
+
+/* =========================
+   VIDEO POPUP
+========================== */
+
+.video-modal {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.92);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+    padding: 25px;
+}
+
+.video-modal.active {
+    display: flex;
+}
+
+.video-modal-content {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    animation: videoPop 0.35s ease;
+}
+
+@keyframes videoPop {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    background: #000;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.video-close {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    background: transparent;
+    border: 0;
+    color: white;
+    font-size: 42px;
+    cursor: pointer;
+}
+
+.proposal-video-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+}
+
+
+/* =========================
+   FOOTER
+========================== */
+
+footer {
+    text-align: center;
+    padding: 50px 20px;
+    border-top: 1px solid #222;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+
+/* =========================
+   TABLET
+   900px AND SMALLER
+========================== */
+
+@media (max-width: 900px) {
+
+    section {
+        padding: 10px 5%;
+    }
+
+    .content-grid,
+    .details-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .photo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .carousel {
+        aspect-ratio: 4 / 3;
+    }
+}
+
+
+/* =========================
+   STORY / PROFILE MOBILE
+   800px AND SMALLER
+========================== */
 
 @media (max-width: 800px) {
 
@@ -772,7 +869,23 @@ material-icons {
 }
 
 
-/* MOBILE */
+/* =========================
+   Q&A TABLET + PHONE
+========================== */
+
+@media (max-width: 768px) {
+
+    .couple-qa {
+        grid-template-columns: 1fr;
+        gap: 45px;
+        padding: 15px;
+    }
+}
+
+
+/* =========================
+   PHOTO ALBUM MOBILE
+========================== */
 
 @media (max-width: 850px) {
 
@@ -785,8 +898,125 @@ material-icons {
     .album-image {
         height: 400px;
     }
-
 }
+
+
+/* =========================
+   MOBILE
+   600px AND SMALLER
+========================== */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        position: relative;
+    }
+
+    .nav-container {
+        padding: 20px;
+    }
+
+    .nav-links {
+        gap: 12px 18px;
+    }
+
+    .nav-links a {
+        font-size: 11px;
+    }
+
+    .hero {
+        min-height: 35vh;
+        padding: 0 15px 20px 15px;
+    }
+
+    .hero h1 {
+        font-size: clamp(1.7rem, 9vw, 3rem);
+        letter-spacing: 1px;
+        white-space: nowrap;
+    }
+
+    .hero p {
+        font-size: 0.75rem;
+        letter-spacing: 1px;
+    }
+
+    .content-grid,
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .photo-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+
+
+    /* =========================
+       MOBILE CAROUSEL FIX
+       FULL IMAGE - NO CROPPING
+    ========================== */
+
+    .carousel {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: auto;
+        overflow: hidden;
+    }
+
+    .carousel-slide {
+        width: 100%;
+        height: auto;
+    }
+
+    .carousel-slide.active {
+        display: block;
+    }
+
+    .carousel-slide img {
+        width: 100%;
+        height: auto;
+        max-height: none;
+        object-fit: contain;
+        object-position: center;
+        display: block;
+    }
+
+    .carousel-section {
+        padding-top: 25px;
+    }
+
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    .grid-card-content {
+        padding: 22px;
+    }
+
+
+    /* PROPOSAL BUTTON */
+
+    .proposal-video-btn {
+        gap: 12px;
+        padding: 5px 18px;
+    }
+
+    .proposal-text strong {
+        font-size: 14px;
+    }
+
+    .proposal-text small {
+        font-size: 8px;
+    }
+}
+
+
+/* =========================
+   SMALL PHONES
+   500px AND SMALLER
+========================== */
 
 @media (max-width: 500px) {
 
@@ -801,61 +1031,16 @@ material-icons {
     .album-image {
         height: 300px;
     }
-
 }
+
 
 /* =========================
-   STORY PAGE
-   Q&A
+   VERY SMALL PHONES
+   480px AND SMALLER
 ========================== */
 
-.couple-qa {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: clamp(30px, 6vw, 80px);
-
-    width: 100%;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.qa-column {
-    min-width: 0;
-}
-
-.qa-column h3 {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.qa-item {
-    margin-bottom: 28px;
-}
-
-.qa-item h4 {
-    margin: 0 0 8px;
-    line-height: 1.4;
-}
-
-.qa-item p {
-    margin: 0;
-    line-height: 1.7;
-    overflow-wrap: break-word;
-}
-
-/* Tablet + Phone */
-@media (max-width: 768px) {
-    .couple-qa {
-        grid-template-columns: 1fr;
-        gap: 45px;
-        padding: 15px;
-    }
-}
-
-/* Small phones */
 @media (max-width: 480px) {
+
     .couple-qa {
         padding: 10px;
     }
@@ -868,346 +1053,4 @@ material-icons {
         margin-bottom: 22px;
     }
 }
-
-/* =========================
-   PROPOSAL VIDEO BUTTON
-========================= */
-
-.proposal-video-btn {
-    display: flex;
-    align-items: center;
-    gap: 18px;
-
-    background: #000;
-    color: #fff;
-
-    border: 1px solid #fff;
-    border-radius: 50px;
-
-    padding: 14px 24px;
-
-    cursor: pointer;
-
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease,
-        background 0.3s ease;
-}
-
-.proposal-video-btn:hover {
-    transform: translateY(-3px) scale(1.03);
-
-    box-shadow:
-        0 8px 25px rgba(255,255,255,0.15);
-
-    background: #111;
-}
-
-.youtube-icon {
-    width: 45px;
-    height: 32px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background: #ff0000;
-
-    border-radius: 8px;
-
-    font-size: 15px;
-}
-
-.proposal-text {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-}
-
-.proposal-text small {
-    font-size: 10px;
-    letter-spacing: 3px;
-}
-
-.proposal-text strong {
-    font-size: 17px;
-    letter-spacing: 1px;
-}
-
-.proposal-arrow {
-    font-size: 32px;
-
-    transition: transform 0.3s ease;
-}
-
-.proposal-video-btn:hover .proposal-arrow {
-    transform: translateX(5px);
-}
-
-
-/* =========================
-   VIDEO POPUP
-========================= */
-
-.video-modal {
-    position: fixed;
-    inset: 0;
-
-    width: 100%;
-    height: 100%;
-
-    background: rgba(0, 0, 0, 0.92);
-
-    display: none;
-    align-items: center;
-    justify-content: center;
-
-    z-index: 99999;
-
-    padding: 25px;
-}
-
-.video-modal.active {
-    display: flex;
-}
-
-.video-modal-content {
-    position: relative;
-    width: 100%;
-    max-width: 900px;
-
-    animation: videoPop 0.35s ease;
-}
-
-@keyframes videoPop {
-    from {
-        opacity: 0;
-        transform: scale(0.9);
-    }
-
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
-.video-wrapper {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%;
-    height: 0;
-
-    background: #000;
-    overflow: hidden;
-}
-
-.video-wrapper iframe {
-    position: absolute;
-    inset: 0;
-
-    width: 100%;
-    height: 100%;
-
-    border: 0;
-}
-
-.video-close {
-    position: absolute;
-    top: -50px;
-    right: 0;
-
-    background: transparent;
-    border: 0;
-
-    color: white;
-    font-size: 42px;
-
-    cursor: pointer;
-}
-
-.video-wrapper {
-    position: relative;
-
-    padding-bottom: 56.25%;
-
-    height: 0;
-
-    overflow: hidden;
-
-    background: #000;
-}
-
-.video-wrapper iframe {
-    position: absolute;
-
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 100%;
-
-    border: 0;
-}
-
-.proposal-video-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px auto;
-}
-
-/* MOBILE */
-
-@media (max-width: 600px) {
-
-    .proposal-video-btn {
-        gap: 12px;
-        padding: 5px 18px;
-    }
-
-    .proposal-text strong {
-        font-size: 14px;
-    }
-
-    .proposal-text small {
-        font-size: 8px;
-    }
-
-}
-
-/* =========================
-   FOOTER
-========================== */
-
-footer {
-    text-align: center;
-
-    padding: 50px 20px;
-
-    border-top: 1px solid #222;
-
-    color: #888;
-
-    font-size: 0.9rem;
-}
-
-
-
-/* =========================
-   TABLET
-   900px AND SMALLER
-========================== */
-
-@media (max-width: 900px) {
-
-    section {
-        padding: 10px 5%;
-    }
-
-
-    .content-grid,
-    .details-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-
-    .photo-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-
-    .nav-links {
-        gap: 15px;
-    }
-
-
-    .nav-links a {
-        font-size: 12px;
-    }
-
-
-    .carousel {
-        aspect-ratio: 4 / 3;
-    }
-
-}
-
-
-
-/* =========================
-   MOBILE
-   600px AND SMALLER
-========================== */
-
-@media (max-width: 600px) {
-
-    .navbar {
-        position: relative;
-    }
-
-
-    .nav-container {
-        padding: 20px;
-    }
-
-
-    .nav-links {
-        gap: 12px 18px;
-    }
-
-
-    .nav-links a {
-        font-size: 11px;
-    }
-
-.hero {
-    min-height: 35vh;
-    padding: 0px 15px 20px 15px;
-}
-
-
-.hero h1 {
-    font-size: clamp(1.7rem, 9vw, 3rem);
-    letter-spacing: 1px;
-    white-space: nowrap;
-}
-
-
-.hero p {
-    font-size: 0.75rem;
-    letter-spacing: 1px;
-}
-
-
-    .content-grid,
-    .details-grid {
-        grid-template-columns: 1fr;
-    }
-
-
-    .photo-grid {
-        grid-template-columns: 1fr 1fr;
-
-        gap: 8px;
-    }
-
-
-    .carousel {
-        aspect-ratio: 1 / 1;
-    }
-
-.carousel-section {
-    padding-top: 25px;
-}
-    .carousel-btn {
-        width: 40px;
-        height: 40px;
-    }
-
-
-    .grid-card-content {
-        padding: 22px;
-    }
-
-}
+```
