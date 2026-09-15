@@ -2,29 +2,45 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Destiny + Sele | Wedding</title>
 
+
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        <!--FAVICON-->
-    <link rel="icon" type="image/png" href="images/favicon.png">
     <link
-    rel="apple-touch-icon"
-    href="images/apple-touch-icon.png"
->
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    >
+
+
+    <!-- FAVICON -->
+    <link
+        rel="icon"
+        type="image/png"
+        href="images/favicon.png"
+    >
+
+    <link
+        rel="apple-touch-icon"
+        href="images/apple-touch-icon.png"
+    >
 
 </head>
 
 
 <body>
 
-    <!-- SHARED NAVIGATION -->
+
+    <!-- =========================
+         SHARED NAVIGATION
+    ========================== -->
+
     <div id="site-header"></div>
 
 
@@ -40,8 +56,9 @@
             <h1>DESTINY + SELE</h1>
 
             <p>
-                Temple Sealing  &nbsp; • &nbsp; November 6, 2026<br/>
-                Wedding Reception  &nbsp; • &nbsp; November 7, 2026<br/>
+                Temple Sealing &nbsp; • &nbsp; November 6, 2026
+                <br>
+                Wedding Reception &nbsp; • &nbsp; November 7, 2026
             </p>
 
         </div>
@@ -49,46 +66,80 @@
     </header>
 
 
-  <!-- =========================
+
+    <!-- =========================
          PROPOSAL VIDEO
     ========================== -->
 
-<div class="proposal-video-container">
+    <div class="proposal-video-container">
 
-    <button class="proposal-video-btn" onclick="openProposalVideo()">
-    <span class="youtube-icon">▶</span>
+        <button
+            class="proposal-video-btn"
+            onclick="openProposalVideo()"
+        >
 
-    <span class="proposal-text">
-        <small>WATCH OUR</small>
-        <strong>PROPOSAL VIDEO</strong>
-    </span>
+            <span class="youtube-icon">
+                ▶
+            </span>
 
-    <span class="proposal-arrow">›</span>
-</button>
-</div>
+            <span class="proposal-text">
 
-<!-- Video Modal -->
-<div class="video-modal" id="proposalModal">
+                <small>
+                    WATCH OUR
+                </small>
 
-    <div class="video-modal-content">
+                <strong>
+                    PROPOSAL VIDEO
+                </strong>
 
-        <button class="video-close" onclick="closeProposalVideo()">
-            &times;
+            </span>
+
+            <span class="proposal-arrow">
+                ›
+            </span>
+
         </button>
 
-        <div class="video-wrapper">
-            <iframe
-                id="proposalVideo"
-                src=""
-                title="Destiny and Tasele Proposal Video"
-                allow="autoplay; encrypted-media; picture-in-picture"
-                allowfullscreen>
-</iframe>
+    </div>
+
+
+
+    <!-- =========================
+         PROPOSAL VIDEO MODAL
+    ========================== -->
+
+    <div
+        class="video-modal"
+        id="proposalModal"
+    >
+
+        <div class="video-modal-content">
+
+            <button
+                class="video-close"
+                onclick="closeProposalVideo()"
+            >
+                &times;
+            </button>
+
+
+            <div class="video-wrapper">
+
+                <iframe
+                    id="proposalVideo"
+                    src=""
+                    title="Destiny and Tasele Proposal Video"
+                    allow="autoplay; encrypted-media; picture-in-picture"
+                    allowfullscreen
+                >
+                </iframe>
+
+            </div>
+
         </div>
 
     </div>
 
-</div>
 
 
     <!-- =========================
@@ -96,8 +147,6 @@
     ========================== -->
 
     <section class="carousel-section">
-
-      
 
         <div class="carousel">
 
@@ -149,6 +198,7 @@
 
             </div>
 
+
             <!-- Slide 5 -->
 
             <div class="carousel-slide">
@@ -159,6 +209,7 @@
                 >
 
             </div>
+
 
             <!-- Slide 6 -->
 
@@ -180,9 +231,7 @@
                 onclick="changeSlide(-1)"
                 aria-label="Previous photo"
             >
-
                 &#10094;
-
             </button>
 
 
@@ -194,9 +243,7 @@
                 onclick="changeSlide(1)"
                 aria-label="Next photo"
             >
-
                 &#10095;
-
             </button>
 
 
@@ -210,22 +257,33 @@
          WEDDING DETAILS
     ========================== -->
 
-<section>
-<header class="hero" id="wedding">
+    <section id="wedding">
+
+
+        <!-- Wedding Section Heading -->
 
         <div class="hero-content">
+
             <h3 class="section-title">
-            The Wedding</h3>
-        </h2>
-        <p>Follow along as Destiny & Sele’s big day gets closer, with all the wedding details, special moments, and important updates in one place.</p>
-       </div>
-</header>
+                The Wedding
+            </h3>
+
+            <p>
+                Follow along as Destiny &amp; Sele’s big day gets closer,
+                with all the wedding details, special moments, and
+                important updates in one place.
+            </p>
+
+        </div>
+
 
 
         <div class="content-grid">
 
 
-            <!-- TEMPLE -->
+            <!-- =========================
+                 TEMPLE
+            ========================== -->
 
             <article class="grid-card">
 
@@ -233,7 +291,7 @@
 
                     <img
                         src="images/temple.jpg"
-                        alt="Our Story"
+                        alt="Provo City Center Temple"
                     >
 
                 </div>
@@ -241,13 +299,36 @@
 
                 <div class="grid-card-content">
 
-                    <h3>Temple Sealing</h3>
+                    <h3>
+                        Temple Sealing
+                    </h3>
 
                     <p>
-                         November 6, 2026<br>
-                         <a href="https://maps.app.goo.gl/6NR43tD9aF5z9nf99" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"> </i> Provo City Center Temple</a><br>
-                        <a href="temple.html"><u>What is a Temple Sealing?</u></a>
-                         
+
+                        November 6, 2026
+
+                        <br>
+
+                        <a
+                            href="https://maps.app.goo.gl/6NR43tD9aF5z9nf99"
+                            target="_blank"
+                        >
+
+                            <i
+                                class="fa fa-map-marker"
+                                aria-hidden="true"
+                            ></i>
+
+                            Provo City Center Temple
+
+                        </a>
+
+                        <br>
+
+                        <a href="temple.html">
+                            <u>What is a Temple Sealing?</u>
+                        </a>
+
                     </p>
 
                 </div>
@@ -256,29 +337,62 @@
 
 
 
-            <!-- VENUE -->
+            <!-- =========================
+                 VENUE
+            ========================== -->
 
-            <article class="grid-card" id="venue">
+            <article
+                class="grid-card"
+                id="venue"
+            >
 
                 <div class="grid-card-image">
 
-                    <a href="https://maps.app.goo.gl/j8sGYw94qzNexvVJ9" target="_blank"><img
-                        src="images/shanty.png"
-                        alt="Wedding Venue"
-                    ></a>
+                    <a
+                        href="https://maps.app.goo.gl/j8sGYw94qzNexvVJ9"
+                        target="_blank"
+                    >
+
+                        <img
+                            src="images/shanty.png"
+                            alt="The White Shanty Wedding Venue"
+                        >
+
+                    </a>
 
                 </div>
 
 
                 <div class="grid-card-content">
 
-                    <h3>Wedding Reception</h3>
+                    <h3>
+                        Wedding Reception
+                    </h3>
 
                     <p>
-                         November 7, 2026<br>
-                         Dinner 5-6pm • Dance 6-9pm<br>
-                         <a href="https://maps.app.goo.gl/j8sGYw94qzNexvVJ9" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i> The White Shanty </a><br>
-                          
+
+                        November 7, 2026
+
+                        <br>
+
+                        Dinner 5-6pm • Dance 6-9pm
+
+                        <br>
+
+                        <a
+                            href="https://maps.app.goo.gl/j8sGYw94qzNexvVJ9"
+                            target="_blank"
+                        >
+
+                            <i
+                                class="fa fa-map-marker"
+                                aria-hidden="true"
+                            ></i>
+
+                            The White Shanty
+
+                        </a>
+
                     </p>
 
                 </div>
@@ -287,26 +401,57 @@
 
 
 
-            <!-- TRAVEL -->
+            <!-- =========================
+                 TRAVEL
+            ========================== -->
 
-            <article class="grid-card" id="travel">
+            <article
+                class="grid-card"
+                id="travel"
+            >
 
                 <div class="grid-card-image">
 
-                    <a href="https://www.ihg.com/garner-hotels/hotels/us/en/find-hotels/select-roomrate?fromRedirect=true&qSrt=sBR&qSlH=PVUPV&qRms=1&qAdlt=1&qCiD=6&qCiMy=102026&qCoD=8&qCoMy=102026&qGrpCd=PQD&setPMCookies=true&qSHBrC=RN&qDest=1515%20South%20University%20Avenue,%20Provo,%20UT,%20US&showApp=true&adjustMonth=false&srb_u=1&qRmFltr=" target="_blank"><img
-                        src="images/hotel.png" alt="Travel Information"></a>
+                    <a
+                        href="https://www.ihg.com/garner-hotels/hotels/us/en/find-hotels/select-roomrate?fromRedirect=true&qSrt=sBR&qSlH=PVUPV&qRms=1&qAdlt=1&qCiD=6&qCiMy=102026&qCoD=8&qCoMy=102026&qGrpCd=PQD&setPMCookies=true&qSHBrC=RN&qDest=1515%20South%20University%20Avenue,%20Provo,%20UT,%20US&showApp=true&adjustMonth=false&srb_u=1&qRmFltr="
+                        target="_blank"
+                    >
+
+                        <img
+                            src="images/hotel.png"
+                            alt="Travel Information"
+                        >
+
+                    </a>
 
                 </div>
 
 
                 <div class="grid-card-content">
 
-                    <h3>Need a Hotel</h3>
+                    <h3>
+                        Need a Hotel
+                    </h3>
 
                     <p>
-                        Limited Discounted rooms <a href="  https://www.ihg.com/garner-hotels/hotels/us/en/find-hotels/select-roomrate?fromRedirect=true&qSrt=sBR&qSlH=PVUPV&qRms=1&qAdlt=1&qCiD=6&qCiMy=102026&qCoD=8&qCoMy=102026&qGrpCd=PQD&setPMCookies=true&qSHBrC=RN&qDest=1515%20South%20University%20Avenue,%20Provo,%20UT,%20US&showApp=true&adjustMonth=false&srb_u=1&qRmFltr=" target="_blank">here.</a><br>
-                        Provo Airport 10-15 min away<br>
+
+                        Limited discounted rooms
+
+                        <a
+                            href="https://www.ihg.com/garner-hotels/hotels/us/en/find-hotels/select-roomrate?fromRedirect=true&qSrt=sBR&qSlH=PVUPV&qRms=1&qAdlt=1&qCiD=6&qCiMy=102026&qCoD=8&qCoMy=102026&qGrpCd=PQD&setPMCookies=true&qSHBrC=RN&qDest=1515%20South%20University%20Avenue,%20Provo,%20UT,%20US&showApp=true&adjustMonth=false&srb_u=1&qRmFltr="
+                            target="_blank"
+                        >
+                            here.
+                        </a>
+
+                        <br>
+
+                        Provo Airport 10-15 min away
+
+                        <br>
+
                         Salt Lake Airport 30 min away
+
                     </p>
 
                 </div>
@@ -318,59 +463,135 @@
 
     </section>
 
-<!-- =========================
-         SUPPORT GIFTS & GIVING
+
+
+    <!-- =========================
+         SUPPORT / GIFTS / GIVING
     ========================== -->
 
-<section>
-<header class="hero" id="registry">
+    <section id="registry">
+
+
+        <!-- Registry Section Heading -->
 
         <div class="hero-content">
+
             <h3 class="section-title">
-            Support Our Journey</h3>
-        <p>Show the newlyweds a little extra love! Scan below to visit their Wedding Registry and/or send a wedding gift through Venmo.</p>
-    </div>
-</header>
+                Support Our Journey
+            </h3>
 
-    <div class="details-grid">
+            <p>
+                Show the newlyweds a little extra love!
+                Scan below to visit their Wedding Registry
+                and/or send a wedding gift through Venmo.
+            </p>
 
-            <!-- REGISTRY -->
+        </div>
+
+
+
+        <div class="details-grid">
+
+
+            <!-- =========================
+                 AMAZON REGISTRY
+            ========================== -->
+
             <div class="detail-box">
 
-                <h3>Amazon <i class="fa fa-gift"></i></h3>
-                
+                <h3>
+                    Amazon
+                    <i class="fa fa-gift"></i>
+                </h3>
+
                 <p>
-                    Help Destiny & Sele start their next chapter together.
-                    <img src="images/destiny-sele-amazon-registry-qr.png" class="qr">
+
+                    Help Destiny &amp; Sele start their next
+                    chapter together.
+
+                    <img
+                        src="images/destiny-sele-amazon-registry-qr.png"
+                        class="qr"
+                        alt="Amazon Wedding Registry QR Code"
+                    >
+
                 </p>
 
-                <a href="https://www.amazon.com/wedding/guest-view/NH0D2BS3P5ZP" target="_blank">View Registry</a>
+                <a
+                    href="https://www.amazon.com/wedding/guest-view/NH0D2BS3P5ZP"
+                    target="_blank"
+                >
+                    View Registry
+                </a>
+
             </div>
 
-        <!-- CELEBRATION -->
+
+
+            <!-- =========================
+                 CULTURAL GIVING
+            ========================== -->
+
             <div class="detail-box">
 
-                <h3>Cultural Giving <i class="fa fa-leaf"></i></h3>
+                <h3>
+                    Cultural Giving
+                    <i class="fa fa-leaf"></i>
+                </h3>
 
                 <p>
-                Show monetary support during the bride’s tauʻolunga.
-                <img src="images/cultural.png" class="qr" alt="Fakapale">
+
+                    Show monetary support during the bride’s tauʻolunga.
+
+                    <img
+                        src="images/cultural.png"
+                        class="qr"
+                        alt="Fakapale"
+                    >
+
                 </p>
-        
-                <a href="fakapale.html" target="_blank">Fakapale</a>
+
+                <a
+                    href="fakapale.html"
+                    target="_blank"
+                >
+                    Fakapale
+                </a>
+
             </div>
 
-            <!-- VENMO -->
+
+
+            <!-- =========================
+                 VENMO
+            ========================== -->
+
             <div class="detail-box">
 
-                <h3>Venmo <i class="fa fa-dollar"></i></h3>
+                <h3>
+                    Venmo
+                    <i class="fa fa-dollar"></i>
+                </h3>
 
-                <p>      
+                <p>
+
                     Bless the newlyweds with a gift through Venmo.
-                    <img src="images/destiny-venmo-qr.png" class="qr">
+
+                    <img
+                        src="images/destiny-venmo-qr.png"
+                        class="qr"
+                        alt="Destiny Venmo QR Code"
+                    >
+
                 </p>
 
-                <a href="https://venmo.com/u/destinywolfgramm" target="_blank" rel="noopener noreferrer">Venmo</a>
+                <a
+                    href="https://venmo.com/u/destinywolfgramm"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Venmo
+                </a>
 
             </div>
 
@@ -394,6 +615,7 @@
     ========================== -->
 
     <script src="includes.js"></script>
+
     <script src="script.js"></script>
 
 
