@@ -136,6 +136,12 @@ material-icons {
     margin-right: auto;
     max-width: 900px;
 }
+#wedding > .hero-content p,
+#registry > .hero-content p {
+    font-size: clamp(0.85rem, 1.5vw, 1.2rem);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
 
 /* =========================
    SECTION TITLES
@@ -984,8 +990,8 @@ footer {
     }
 
     .carousel-section {
-        padding: 0;
-        margin: 0;
+    padding: 10px 0 0;
+    margin: 0;
     }
 
     .carousel {
